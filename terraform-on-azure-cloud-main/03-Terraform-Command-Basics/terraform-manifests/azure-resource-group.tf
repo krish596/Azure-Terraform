@@ -10,13 +10,18 @@ terraform {
   }
 }
 
-# Configure the Microsoft Azure Provider
+# # Configure the Microsoft Azure Provider
+# provider "azurerm" {
+#   features {
+    
+#   }
+# }
+
 provider "azurerm" {
+  resource_provider_registrations = "none" # This is only required when the User, Service Principal, or Identity running Terraform lacks the permissions to register Azure Resource Providers.
   features {}
 }
 
-# Create Resource Group 
-resource "azurerm_resource_group" "my_demo_rg1" {
-  location = "eastus"
-  name = "my-demo-rg1"  
-}
+
+
+
