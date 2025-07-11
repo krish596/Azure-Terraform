@@ -71,7 +71,7 @@ resource "azurerm_subnet" "myvnet" {
 
 # # Resource-4: Create Public IP Address
 resource "azurerm_public_ip" "mypublicip" {
-  allocation_method   = "static"
+  allocation_method   = "Static"
   location            = azurerm_resource_group.myrg.location
   name                = "mypublicip"
   resource_group_name = azurerm_resource_group.myrg.name
