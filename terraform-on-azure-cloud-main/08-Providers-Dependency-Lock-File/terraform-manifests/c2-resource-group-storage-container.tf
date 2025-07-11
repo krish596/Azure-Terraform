@@ -12,7 +12,7 @@ resource "random_string" "myrandom" {
   special = false
 }
 
-Resource-3: Azure Storage Account
+# Resource-3: Azure Storage Account
 resource "azurerm_storage_account" "mysa" {
   name                     = "mysa${random_string.myrandom.id}"
   resource_group_name      = azurerm_resource_group.myrg1.name
