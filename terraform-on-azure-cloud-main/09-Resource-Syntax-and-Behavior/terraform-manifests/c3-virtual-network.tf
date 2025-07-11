@@ -88,6 +88,6 @@ resource "azurerm_network_interface" "myvmnet" {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.myvnet.id
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id = "10.0.2.0/16"
+    public_ip_address_id = azurerm_public_ip.mypublicip.id
   }
 }
