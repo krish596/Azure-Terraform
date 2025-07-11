@@ -63,7 +63,7 @@ resource "azurerm_virtual_network" "myvm" {
 # # Resource-3: Create Subnet
 resource "azurerm_subnet" "myvnet" {
   address_prefixes     = ["10.0.1.0/24"]
-  name                 = "myvnet-2"
+  name                 = "myvnet"
   resource_group_name  = azurerm_resource_group.myrg.name
   virtual_network_name = azurerm_virtual_network.myvm.name
 }
