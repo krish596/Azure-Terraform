@@ -1,3 +1,4 @@
+
 # Generic Input Variables
 # Business Division
 variable "business_divsion" {
@@ -12,17 +13,17 @@ variable "environment" {
   default = "dev"
 }
 
-# Azure Resource Group Name 
+# Azure Resource Group Name
 variable "resource_group_name" {
   description = "Resource Group Name"
   type = string
-  default = "rg-default"  
+  default = "rg-default"
 }
 
 # Azure Resources Location
 variable "resource_group_location" {
   description = "Region in which Azure Resources to be created"
   type = string
-  default = "eastus2"  
+  default = "eastus2"
 }
 

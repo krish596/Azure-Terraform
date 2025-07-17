@@ -8,4 +8,5 @@ locals {
     owners = local.owners
     environment = local.environment
   }
-} 
+}
+

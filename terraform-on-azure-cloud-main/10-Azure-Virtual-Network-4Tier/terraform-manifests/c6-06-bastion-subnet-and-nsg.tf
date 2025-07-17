@@ -1,3 +1,4 @@
+
 # Resource-1: Create Bastion / Management Subnet
 resource "azurerm_subnet" "bastionsubnet" {
   name                 = "${azurerm_virtual_network.vnet.name}-${var.bastion_subnet_name}"  
